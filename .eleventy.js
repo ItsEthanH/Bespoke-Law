@@ -54,11 +54,9 @@ module.exports = function (eleventyConfig) {
      *      Copy/paste non-template files straight to /public, without any interference from the eleventy engine
      *      https://www.11ty.dev/docs/copy/
      */
-    eleventyConfig.addPassthroughCopy("./src/assets/css"); // CS-TODO - For optimization branch, remove CSS passthrough
     eleventyConfig.addPassthroughCopy("./src/assets/favicons");
     eleventyConfig.addPassthroughCopy("./src/assets/fonts");
     eleventyConfig.addPassthroughCopy("./src/assets/images");
-    eleventyConfig.addPassthroughCopy("./src/assets/js"); // CS-TODO - For optimization branch, remove JS passthrough
     eleventyConfig.addPassthroughCopy("./src/assets/svgs");
 
     /**
