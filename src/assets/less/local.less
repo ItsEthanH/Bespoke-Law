@@ -6,6 +6,8 @@
 @media only screen and (min-width: 0rem) {
     #hero-288 {
         position: relative;
+        background-color: #f7f7f7;
+        overflow: hidden;
         /* 116px - 300px top */
         /* 60px - 100px  bottom */
         padding: clamp(7.25rem, 20vw, 18.75rem) (16/16rem) clamp(3.75rem, 7.82vw, 6.25rem);
@@ -46,8 +48,8 @@
             margin: clamp(2.5rem, 10vw, 3rem) 0;
             max-width: (522/16rem);
             padding: 0;
-            /* 20px - 40px */
-            column-gap: clamp(1.25rem, 5.9vw, 2.5rem);
+            /* 48px - 60px */
+            column-gap: clamp(3rem, 6vw, 3.75rem);
         }
 
         .cs-item {
@@ -72,6 +74,7 @@
         }
 
         .cs-picture {
+            z-index: 1;
             position: relative;
             display: block;
             border-radius: (16/16rem);
@@ -94,7 +97,6 @@
         }
 
         .cs-waves {
-            z-index: -1;
             position: absolute;
             bottom: 0;
             left: 0;
@@ -666,10 +668,16 @@
             text-align: left;
         }
 
+        .cs-button-solid {
+            width: fit-content;
+        }
+
         .cs-background {
             display: block;
+            border-radius: (24/16rem) 0 0 0;
             height: (360/16rem);
             width: 100%;
+            overflow: hidden;
 
             img {
                 height: 100%;
@@ -796,7 +804,8 @@
         }
 
         .cs-title {
-            margin: 0 0 (40/16rem) 0;
+            /* 40px - 85px */
+            margin: 0 0 clamp(2.5rem, 6vw, 5.3125rem) 0;
             color: var(--bodyTextColorWhite);
         }
 
@@ -814,9 +823,11 @@
             z-index: 1;
             position: relative;
             display: block;
-            min-height: (420/16rem);
+            border-radius: (24/16rem);
+            min-height: (638/16rem);
             height: auto;
             width: 100%;
+            overflow: hidden;
 
             img {
                 position: absolute;
@@ -836,8 +847,9 @@
         }
 
         .cs-stats {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: space-between;
             margin: 0;
             max-width: (630/16rem);
             width: 100%;
@@ -910,7 +922,7 @@
             &:before {
                 z-index: -1;
                 position: absolute;
-                top: 100%;
+                top: 90%;
                 left: -100%;
                 content: "";
                 opacity: 1;
@@ -998,6 +1010,7 @@
         }
 
         .cs-item {
+            border-radius: (24/16rem);
             background-color: #f7f8f8;
             box-sizing: border-box;
             /* 24px - 40px top & bottom */
@@ -1007,7 +1020,7 @@
 
             &:hover {
                 transform: translateY(-0.4375rem);
-                background-color: #fff;
+                background-color: var(--primary);
                 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 50px;
 
                 .cs-picture {
@@ -1016,6 +1029,11 @@
                         height: 100%;
                         width: 100%;
                     }
+                }
+
+                .cs-h3,
+                .cs-item-text {
+                    color: var(--bodyTextColorWhite);
                 }
             }
         }
@@ -1216,7 +1234,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px solid var(--primary);
+            border: 1px solid #bababa;
+            border-radius: (24/16rem);
             margin: 0;
             height: clamp(3.75rem, 7vw, 5rem);
             /* 60px - 80px */
@@ -1284,6 +1303,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            border-radius: (24/16rem);
             margin-top: (-38/16em);
             margin-left: (24/16em);
             background-color: #f7f7f7;
@@ -1306,12 +1326,14 @@
             margin: 0;
             font-size: (14/16em);
             line-height: 1.5em;
-            color: var(--primary);
+            color: var(--secondary);
         }
 
         .cs-picture {
             z-index: 1;
             position: relative;
+            border-radius: (24/16rem);
+            overflow: hidden;
 
             img {
                 position: absolute;
@@ -1381,7 +1403,7 @@
 @media only screen and (min-width: 64rem) {
     #why-choose-1635 {
         /* set the darker background color on the main div */
-        background-color: #f8f5f1;
+        background-color: #f7f7f7;
         overflow: hidden;
 
         .cs-content {
@@ -1396,7 +1418,7 @@
             z-index: 1;
             position: relative;
             display: flex;
-            flex-direction: row;
+            flex-direction: row-reverse;
             justify-content: space-between;
             align-items: stretch;
             gap: (40/16rem);
@@ -1537,6 +1559,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            border-radius: (24/16rem);
             margin: 0;
             background-color: #f0f0f0;
             width: 100%;
@@ -1607,6 +1630,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
+            align-items: stretch;
         }
 
         .cs-item {
@@ -1669,19 +1693,23 @@
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
             align-items: center;
-            max-width: (640/16rem);
+            max-width: (800/16rem);
             width: 100%;
             /* set text align to left if content needs to be left aligned */
             text-align: center;
         }
 
         .cs-title {
-            max-width: 20ch;
+            max-width: none;
+            color: var(--bodyTextColorWhite);
         }
 
         .cs-text {
+            opacity: 0.8;
             /* 28px - 40px */
             margin: 0 0 clamp(1.75rem, 3vw, 2.5rem) 0;
+            max-width: none;
+            color: var(--bodyTextColorWhite);
         }
 
         .cs-submit {
@@ -1692,6 +1720,31 @@
 
             &:hover {
                 cursor: pointer;
+            }
+        }
+
+        .cs-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "";
+                opacity: 0.8;
+                background-color: #000;
+                height: 100%;
+                width: 100%;
             }
         }
 
