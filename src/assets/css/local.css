@@ -5,9 +5,9 @@
 @media only screen and (min-width: 0rem) {
   #hero-288 {
     position: relative;
-    /* 116px - 164px top */
+    /* 116px - 300px top */
     /* 60px - 100px  bottom */
-    padding: clamp(7.25rem, 16.82vw, 10.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
+    padding: clamp(7.25rem, 20vw, 18.75rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
     /* centers button */
     text-align: center;
   }
@@ -26,78 +26,19 @@
     justify-content: center;
     align-items: center;
   }
-  #hero-288 .cs-title {
-    position: relative;
-    margin: 0 auto 1rem;
-    max-width: 43.75rem;
-    /* 39px - 61px */
-    font-size: clamp(2.4375rem, 5vw, 3.8125rem);
-    line-height: 1.2em;
-    font-weight: 900;
-    color: var(--headerColor);
-    text-align: center;
-  }
   #hero-288 .cs-text {
-    margin: 0 auto;
-    /* 28px - 40px */
-    margin-bottom: clamp(1.75rem, 3.92vw, 2.5rem);
-    max-width: 33.1875rem;
-    width: 100%;
     /* 16px - 20px */
     font-size: clamp(1rem, 1.5vw, 1.25rem);
-    line-height: 1.5em;
-    color: var(--bodyTextColor);
-    text-align: center;
   }
   #hero-288 .cs-button-solid {
-    z-index: 1;
-    position: relative;
-    display: inline-block;
-    border-radius: 0.25rem;
-    margin: auto;
-    margin: 0;
-    background-color: var(--secondary);
-    min-width: 9.375rem;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    padding: 0 1.5rem;
-    text-decoration: none;
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    font-weight: 700;
-    color: #1a1a1a;
-    transition: color 0.3s;
-    text-align: center;
-  }
-  #hero-288 .cs-button-solid:before {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    opacity: 1;
-    border-radius: 0.25rem;
-    background: var(--primary);
-    height: 100%;
-    width: 0%;
-    transition: width 0.3s;
-  }
-  #hero-288 .cs-button-solid:hover {
-    color: #fff;
-  }
-  #hero-288 .cs-button-solid:hover:before {
-    width: 100%;
+    margin-top: 2.5rem;
   }
   #hero-288 .cs-stats-group {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0;
-    /* 40px - 98px */
-    margin-top: clamp(2.5rem, calc(6.3vw + 1rem), 6.125rem);
     /* 40px - 48px */
-    margin-bottom: clamp(2.5rem, 10vw, 3rem);
+    margin: clamp(2.5rem, 10vw, 3rem) 0;
     max-width: 32.625rem;
     padding: 0;
     /* 20px - 40px */
@@ -416,41 +357,6 @@
   #sbs-311 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #sbs-311 .cs-button-solid {
-    z-index: 1;
-    position: relative;
-    display: inline-block;
-    border-radius: 0.25rem;
-    margin: 0;
-    background-color: var(--primary);
-    min-width: 9.375rem;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    padding: 0 1.5rem;
-    text-decoration: none;
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
-  }
-  #sbs-311 .cs-button-solid:before {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    opacity: 1;
-    border-radius: 0.25rem;
-    background: #000;
-    height: 100%;
-    width: 0%;
-    transition: width 0.3s;
-  }
-  #sbs-311 .cs-button-solid:hover:before {
-    width: 100%;
-  }
   #sbs-311 .cs-quote {
     position: relative;
     border-radius: 1rem;
@@ -642,7 +548,7 @@
     font-size: clamp(5rem, 9vw, 6.25rem);
     line-height: 1.2em;
     font-weight: 900;
-    color: var(--primary);
+    color: var(--secondary);
   }
   #steps-1712 .cs-h3 {
     margin: 0 0 0.75rem 0;
@@ -834,8 +740,14 @@
     font-size: 1rem;
     line-height: 1.5em;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--secondary);
     text-align: left;
+  }
+  #sbs-1640 .cs-button-solid {
+    margin-top: 2rem;
+    background: var(--secondary);
+    width: fit-content;
+    color: var(--primary);
   }
 }
 /* Tablet - 768px */
@@ -1514,68 +1426,11 @@
     /* 28px - 40px */
     margin: 0 0 clamp(1.75rem, 3vw, 2.5rem) 0;
   }
-  #cta-1692 .cs-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 39.5rem;
-    width: 100%;
-    /* 8px - 20px */
-    gap: clamp(0.5rem, 2vw, 1.25rem);
-  }
-  #cta-1692 .cs-input {
-    display: block;
-    border: none;
-    margin: 0;
-    height: clamp(2.875rem, 5.5vw, 3.5rem);
-    width: 100%;
-    /* prevents padding from adding to width and height */
-    box-sizing: border-box;
-    padding: 0;
-    padding-left: 1.25rem;
-    font-size: 1rem;
-  }
-  #cta-1692 .cs-input::placeholder {
-    color: var(--bodyTextColor);
-  }
-  #cta-1692 .cs-button-solid {
-    z-index: 1;
-    position: relative;
-    display: inline-block;
-    margin: 0;
-    background-color: var(--primary);
-    min-width: 9.375rem;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    /* 32px - 48px */
-    padding: 0 clamp(2rem, 4vw, 3rem);
-    text-decoration: none;
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
-  }
-  #cta-1692 .cs-button-solid:before {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    opacity: 1;
-    background: #000;
-    height: 100%;
-    width: 0%;
-    transition: width 0.3s;
-  }
-  #cta-1692 .cs-button-solid:hover:before {
-    width: 100%;
-  }
   #cta-1692 .cs-submit {
     border: none;
+    background-color: var(--secondary);
     width: 100%;
+    color: var(--primary);
   }
   #cta-1692 .cs-submit:hover {
     cursor: pointer;
@@ -1600,12 +1455,6 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #cta-1692 .cs-form {
-    flex-direction: row;
-  }
-  #cta-1692 .cs-input {
-    width: 22.5rem;
-  }
   #cta-1692 .cs-submit {
     width: fit-content;
   }
@@ -1626,12 +1475,6 @@
   }
   body.dark-mode #cta-1692 .cs-text {
     opacity: 0.8;
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #cta-1692 .cs-input {
-    background-color: var(--medium);
-  }
-  body.dark-mode #cta-1692 .cs-input::placeholder {
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #cta-1692 .cs-graphic {

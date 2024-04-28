@@ -8,8 +8,8 @@
         /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
         --primary: #101636;
         --primaryLight: #101636;
-        --secondary: #b69d75;
-        --secondaryLight: #b69d75;
+        --secondary: #ac8856;
+        --secondaryLight: #ac8856;
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
         --bodyTextColorWhite: #fafbfc;
@@ -36,6 +36,7 @@
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
     }
+
     .cs-topper {
         display: block;
         margin-bottom: 0.25rem;
@@ -44,7 +45,7 @@
         font-size: var(--topperFontSize);
         line-height: 1.2em;
         font-weight: 700;
-        color: var(--primary);
+        color: var(--secondary);
         text-align: inherit;
     }
 
@@ -73,18 +74,20 @@
         z-index: 1;
         position: relative;
         display: inline-block;
+        border-radius: (8/16rem);
         margin: 0;
         background-color: var(--primary);
         min-width: (150/16rem);
         /* prevents padding from adding to the width */
         box-sizing: border-box;
-        padding: 0 (24/16rem);
+        padding: 0 (48/16rem);
         text-decoration: none;
+        text-transform: uppercase;
         font-size: (16/16rem);
         /* 46px - 56px */
         line-height: clamp(2.875rem, 5.5vw, 3.5rem);
         font-weight: 700;
-        color: #1a1a1a;
+        color: #fff;
         transition: color 0.3s;
         text-align: center;
 

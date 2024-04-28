@@ -6,9 +6,9 @@
 @media only screen and (min-width: 0rem) {
     #hero-288 {
         position: relative;
-        /* 116px - 164px top */
+        /* 116px - 300px top */
         /* 60px - 100px  bottom */
-        padding: clamp(7.25rem, 16.82vw, 10.25rem) (16/16rem) clamp(3.75rem, 7.82vw, 6.25rem);
+        padding: clamp(7.25rem, 20vw, 18.75rem) (16/16rem) clamp(3.75rem, 7.82vw, 6.25rem);
         /* centers button */
         text-align: center;
 
@@ -29,83 +29,21 @@
             align-items: center;
         }
 
-        .cs-title {
-            position: relative;
-            margin: 0 auto (16/16rem);
-            max-width: (700/16rem);
-            /* 39px - 61px */
-            font-size: clamp(2.4375rem, 5vw, 3.8125rem);
-            line-height: 1.2em;
-            font-weight: 900;
-            color: var(--headerColor);
-            text-align: center;
-        }
-
         .cs-text {
-            margin: 0 auto;
-            /* 28px - 40px */
-            margin-bottom: clamp(1.75rem, 3.92vw, 2.5rem);
-            max-width: (531/16rem);
-            width: 100%;
             /* 16px - 20px */
             font-size: clamp(1rem, 1.5vw, 1.25rem);
-            line-height: 1.5em;
-            color: var(--bodyTextColor);
-            text-align: center;
         }
 
         .cs-button-solid {
-            z-index: 1;
-            position: relative;
-            display: inline-block;
-            border-radius: (4/16rem);
-            margin: auto;
-            margin: 0;
-            background-color: var(--secondary);
-            min-width: (150/16rem);
-            /* prevents padding from adding to the width */
-            box-sizing: border-box;
-            padding: 0 (24/16rem);
-            text-decoration: none;
-            font-size: (16/16rem);
-            /* 46px - 56px */
-            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-            font-weight: 700;
-            color: #1a1a1a;
-            transition: color 0.3s;
-            text-align: center;
-
-            &:before {
-                z-index: -1;
-                position: absolute;
-                top: 0;
-                left: 0;
-                content: "";
-                opacity: 1;
-                border-radius: (4/16rem);
-                background: var(--primary);
-                height: 100%;
-                width: 0%;
-                transition: width 0.3s;
-            }
-
-            &:hover {
-                color: #fff;
-                &:before {
-                    width: 100%;
-                }
-            }
+            margin-top: (40/16rem);
         }
 
         .cs-stats-group {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            margin: 0;
-            /* 40px - 98px */
-            margin-top: clamp(2.5rem, calc(6.3vw + 1rem), 6.125rem);
             /* 40px - 48px */
-            margin-bottom: clamp(2.5rem, 10vw, 3rem);
+            margin: clamp(2.5rem, 10vw, 3rem) 0;
             max-width: (522/16rem);
             padding: 0;
             /* 20px - 40px */
@@ -481,46 +419,6 @@
             }
         }
 
-        .cs-button-solid {
-            z-index: 1;
-            position: relative;
-            display: inline-block;
-            border-radius: (4/16rem);
-            margin: 0;
-            background-color: var(--primary);
-            min-width: (150/16rem);
-            /* prevents padding from adding to the width */
-            box-sizing: border-box;
-            padding: 0 (24/16rem);
-            text-decoration: none;
-            font-size: (16/16rem);
-            /* 46px - 56px */
-            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-            font-weight: 700;
-            color: #fff;
-            text-align: center;
-
-            &:before {
-                z-index: -1;
-                position: absolute;
-                top: 0;
-                left: 0;
-                content: "";
-                opacity: 1;
-                border-radius: (4/16rem);
-                background: #000;
-                height: 100%;
-                width: 0%;
-                transition: width 0.3s;
-            }
-
-            &:hover {
-                &:before {
-                    width: 100%;
-                }
-            }
-        }
-
         .cs-quote {
             position: relative;
             border-radius: (16/16rem);
@@ -748,7 +646,7 @@
             font-size: clamp(5rem, 9vw, 6.25rem);
             line-height: 1.2em;
             font-weight: 900;
-            color: var(--primary);
+            color: var(--secondary);
         }
 
         .cs-h3 {
@@ -976,8 +874,15 @@
             font-size: (16/16rem);
             line-height: 1.5em;
             font-weight: 700;
-            color: var(--primary);
+            color: var(--secondary);
             text-align: left;
+        }
+
+        .cs-button-solid {
+            margin-top: (32/16rem);
+            background: var(--secondary);
+            width: fit-content;
+            color: var(--primary);
         }
     }
 }
@@ -1779,76 +1684,11 @@
             margin: 0 0 clamp(1.75rem, 3vw, 2.5rem) 0;
         }
 
-        .cs-form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            max-width: (632/16rem);
-            width: 100%;
-            /* 8px - 20px */
-            gap: clamp(0.5rem, 2vw, 1.25rem);
-        }
-
-        .cs-input {
-            display: block;
-            border: none;
-            margin: 0;
-            height: clamp(2.875rem, 5.5vw, 3.5rem);
-            width: 100%;
-            /* prevents padding from adding to width and height */
-            box-sizing: border-box;
-            padding: 0;
-            padding-left: (20/16rem);
-            font-size: (16/16rem);
-
-            &::placeholder {
-                color: var(--bodyTextColor);
-            }
-        }
-
-        .cs-button-solid {
-            z-index: 1;
-            position: relative;
-            display: inline-block;
-            margin: 0;
-            background-color: var(--primary);
-            min-width: (150/16rem);
-            /* prevents padding from adding to the width */
-            box-sizing: border-box;
-            /* 32px - 48px */
-            padding: 0 clamp(2rem, 4vw, 3rem);
-            text-decoration: none;
-            font-size: (16/16rem);
-            /* 46px - 56px */
-            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-            font-weight: 700;
-            color: #fff;
-            text-align: center;
-
-            &:before {
-                z-index: -1;
-                position: absolute;
-                top: 0;
-                left: 0;
-                content: "";
-                opacity: 1;
-                background: #000;
-                height: 100%;
-                width: 0%;
-                transition: width 0.3s;
-            }
-
-            &:hover {
-                &:before {
-                    width: 100%;
-                }
-            }
-        }
-
         .cs-submit {
             border: none;
+            background-color: var(--secondary);
             width: 100%;
+            color: var(--primary);
 
             &:hover {
                 cursor: pointer;
@@ -1880,14 +1720,6 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #cta-1692 {
-        .cs-form {
-            flex-direction: row;
-        }
-
-        .cs-input {
-            width: (360/16rem);
-        }
-
         .cs-submit {
             width: fit-content;
         }
@@ -1915,14 +1747,6 @@
             .cs-text {
                 opacity: 0.8;
                 color: var(--bodyTextColorWhite);
-            }
-
-            .cs-input {
-                background-color: var(--medium);
-
-                &::placeholder {
-                    color: var(--bodyTextColorWhite);
-                }
             }
 
             .cs-graphic {
