@@ -1,0 +1,152 @@
+/*-- -------------------------- -->
+<---            Hero            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-288 {
+    position: relative;
+    background-color: #f7f7f7;
+    overflow: hidden;
+    /* 116px - 300px top */
+    /* 60px - 100px  bottom */
+    padding: clamp(7.25rem, 20vw, 18.75rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
+    /* centers button */
+    text-align: center;
+  }
+  #hero-288 .cs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 80rem;
+    width: 100%;
+  }
+  #hero-288 .cs-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero-288 .cs-text {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+  }
+  #hero-288 .cs-button-solid {
+    margin-top: 2.5rem;
+  }
+  #hero-288 .cs-stats-group {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* 40px - 48px */
+    margin: clamp(2.5rem, 10vw, 3rem) 0;
+    max-width: 32.625rem;
+    padding: 0;
+    /* 48px - 60px */
+    column-gap: clamp(3rem, 6vw, 3.75rem);
+  }
+  #hero-288 .cs-item {
+    width: auto;
+    list-style: none;
+  }
+  #hero-288 .cs-number {
+    display: block;
+    /* 25px - 49px */
+    font-size: clamp(1.5625rem, 3.8vw, 3.0625rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    color: var(--headerColor);
+  }
+  #hero-288 .cs-desc {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 2.1vw, 1rem);
+    line-height: 1.5em;
+    color: #767676;
+  }
+  #hero-288 .cs-picture {
+    z-index: 1;
+    position: relative;
+    display: block;
+    border-radius: 1rem;
+    /* 380px - 453px */
+    height: clamp(23.75rem, 59vw, 28.3215rem);
+    max-width: 36.5625rem;
+    width: 100%;
+    /* clips the img tag corners */
+    overflow: hidden;
+  }
+  #hero-288 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act as a background image */
+    object-fit: cover;
+  }
+  #hero-288 .cs-waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background-color: var(--primary);
+    height: 30%;
+    width: 100%;
+  }
+  #hero-288 .cs-waves img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act as a background image */
+    object-fit: cover;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #hero-288 {
+    text-align: left;
+  }
+  #hero-288 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 6.25rem;
+  }
+  #hero-288 .cs-content {
+    align-items: flex-start;
+    width: 40%;
+    /* prevents flex-box from squishing it */
+    flex: none;
+  }
+  #hero-288 .cs-title,
+  #hero-288 .cs-text {
+    text-align: left;
+  }
+  #hero-288 .cs-picture {
+    /* 623px - 814px */
+    height: clamp(38.9375rem, 60vw, 50.875rem);
+    max-width: 39.375rem;
+  }
+  #hero-288 .cs-waves {
+    left: 50%;
+    margin-left: 12.5rem;
+    height: 100%;
+    width: calc(40vw + 9rem);
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #hero-288 .cs-title,
+  body.dark-mode #hero-288 .cs-text,
+  body.dark-mode #hero-288 .cs-number,
+  body.dark-mode #hero-288 .cs-desc {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #hero-288 .cs-waves {
+    opacity: 0.5;
+    filter: brightness(160%);
+  }
+}
