@@ -6,8 +6,8 @@
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
     --primary: #101636;
     --primaryLight: #101636;
-    --secondary: #ac8856;
-    --secondaryLight: #ac8856;
+    --secondary: #8c6836;
+    --secondaryLight: #f8cc90;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;

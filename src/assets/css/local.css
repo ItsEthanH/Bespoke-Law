@@ -221,7 +221,7 @@
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
-    color: #767676;
+    color: var(--bodyTextColor);
   }
   #sbs-311 .cs-name {
     display: block;
@@ -236,7 +236,7 @@
     display: block;
     font-size: 0.875rem;
     line-height: 1.5em;
-    color: #767676;
+    color: var(--secondary);
   }
   #sbs-311 .cs-quote-icon {
     position: absolute;
@@ -525,6 +525,9 @@
     /* set text align to left if content needs to be left aligned */
     text-align: left;
   }
+  #sbs-1640 .cs-topper {
+    color: var(--secondaryLight);
+  }
   #sbs-1640 .cs-title {
     /* 40px - 85px */
     margin: 0 0 clamp(2.5rem, 6vw, 5.3125rem) 0;
@@ -599,12 +602,12 @@
     font-size: 1rem;
     line-height: 1.5em;
     font-weight: 700;
-    color: var(--secondary);
+    color: var(--secondaryLight);
     text-align: left;
   }
   #sbs-1640 .cs-button-solid {
     margin-top: 2rem;
-    background: var(--secondary);
+    background: var(--secondaryLight);
     width: fit-content;
     color: var(--primary);
   }
@@ -1289,6 +1292,9 @@
     /* set text align to left if content needs to be left aligned */
     text-align: center;
   }
+  #cta-1692 .cs-topper {
+    color: var(--secondaryLight);
+  }
   #cta-1692 .cs-title {
     max-width: none;
     color: var(--bodyTextColorWhite);
@@ -1302,7 +1308,7 @@
   }
   #cta-1692 .cs-submit {
     border: none;
-    background-color: var(--secondary);
+    background-color: var(--secondaryLight);
     width: 100%;
     color: var(--primary);
   }
